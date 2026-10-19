@@ -1,7 +1,7 @@
 [
   {
     "id": "embassies",
-    "question": "Where does the world have an address in Germany?",
+    "question": "Where does the world have an address in Berlin?",
     "type": "Map",
     "href": "/embassies"
   }

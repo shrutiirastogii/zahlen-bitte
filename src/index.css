@@ -24,3 +24,28 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Keep embassy popups readable regardless of the website theme. */
+.embassy-popup .maplibregl-popup-content {
+  background: #ffffff;
+  color: #1f2937;
+  padding: 16px 28px 16px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 20%);
+}
+
+.embassy-popup .maplibregl-popup-content strong {
+  color: #111827;
+}
+
+.embassy-popup .maplibregl-popup-content small {
+  color: #4b5563;
+}
+
+.embassy-popup .maplibregl-popup-close-button {
+  color: #1f2937;
+  font-size: 20px;
+  padding: 2px 6px;
+}
