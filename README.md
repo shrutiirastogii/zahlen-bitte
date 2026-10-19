@@ -1,32 +1,62 @@
-# React + TypeScript + Vite
+# Zahlen, bitte!
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+### Germany, one curious chart at a time.
 
-Currently, two official plugins are available:
+An interactive data visualization project exploring Germany through numbers, maps, and curious questions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+From the people who call Germany home to the regional details that make it interesting, the idea is simple: take a question, find the data, and make it worth exploring.
 
-## React Compiler
+## Current progress
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The project is in its early stages. So far, it includes:
 
-## Expanding the Oxlint configuration
+- A minimal landing page
+- A shared header with custom branding
+- Light and dark themes with a saved preference
+- A responsive layout
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+The first interactive visualization is next.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Built with
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+
+Tailwind handles component styling, while a small global CSS file defines theme colors and base styles.
+
+## Run locally
+
+Clone the repository, then run:
+
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Open the local URL shown in your terminal.
+
+### Other commands
+
+```bash
+npm run build    # Type-check and build for production
+npm run preview  # Preview the production build locally
+npm run lint     # Run ESLint
+```
+
+## What's next
+
+- Build the first Germany-focused visualization
+- Add clear data sources and explanations
+- Expand the collection one question at a time
+
+## Data and methodology
+
+Each visualization will include its data source, reference period, and any important limitations.
+
+The goal is to make the data approachable without losing the context behind the numbers.
+
+---
+
+A project by Shruti.
