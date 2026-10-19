@@ -1,3 +1,6 @@
+import { Route, Routes } from "react-router";
+import Home from "./pages/Home";
+import Embassies from "./pages/Embassies";
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
 
@@ -34,11 +37,16 @@ export default function App() {
         onToggleTheme={() => setIsDark((previous) => !previous)}
       />
 
-<main className="px-6 pt-20 pb-12 md:pt-28">
-  <h1 className="mx-auto max-w-4xl text-center text-4xl leading-tight font-semibold md:text-6xl">
-    Germany, one curious chart at a time.
-  </h1>
-</main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/embassies" element={<Embassies />} />
+        <Route
+          path="*"
+          element={
+            <main className="px-6 py-16 text-center">Page not found.</main>
+          }
+        />
+      </Routes>
     </div>
   );
 }

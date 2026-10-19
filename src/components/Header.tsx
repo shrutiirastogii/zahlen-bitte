@@ -1,5 +1,6 @@
 import logoLight from "../assets/logo-light.png";
 import logoDark from "../assets/logo-dark.png";
+import { Link } from "react-router";
 
 type HeaderProps = {
   isDark: boolean;
@@ -11,8 +12,8 @@ export default function Header({ isDark, onToggleTheme }: HeaderProps) {
     <header className="sticky top-0 z-50 border-b border-ink/10 bg-page text-ink">
       <div className="flex h-20 w-full items-center justify-between px-3 md:px-5">
         {" "}
-        <a
-          href="/"
+        <Link
+          to="/"
           aria-label="Zahlen, bitte! Home"
           className="shrink-0 rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4"
         >
@@ -21,7 +22,7 @@ export default function Header({ isDark, onToggleTheme }: HeaderProps) {
             alt="Zahlen, bitte!"
             className="block h-10 w-auto md:h-12"
           />
-        </a>
+        </Link>
         <nav
           aria-label="Main navigation"
           className="flex items-center gap-5 md:gap-8"
