@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+/* =========================================
+   Theme
+   ========================================= */
+
 :root {
   --background: #f6f4f1;
   --foreground: #0f3473;
@@ -17,6 +21,10 @@
   --color-ink: var(--foreground);
 }
 
+/* =========================================
+   Base
+   ========================================= */
+
 body {
   margin: 0;
   min-width: 320px;
@@ -25,7 +33,43 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Keep embassy popups readable regardless of the website theme. */
+/* =========================================
+   Shared visualization page layout
+   ========================================= */
+
+.visualization-page {
+  width: min(1200px, calc(100% - 48px));
+  margin-inline: auto;
+  padding-block: 96px 64px;
+}
+
+.visualization-page__header {
+  margin-bottom: 40px;
+}
+
+.visualization-page__title {
+  max-width: 950px;
+  margin: 0;
+  font-family: inherit;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.visualization-page__description {
+  max-width: 65ch;
+  margin: 20px 0 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.75;
+}
+
+/* =========================================
+   Embassy map popups
+   ========================================= */
+
 .embassy-popup .maplibregl-popup-content {
   background: #ffffff;
   color: #1f2937;
@@ -48,4 +92,249 @@ body {
   color: #1f2937;
   font-size: 20px;
   padding: 2px 6px;
+}
+
+.embassy-popup .maplibregl-popup-close-button:hover {
+  background: #e5e7eb;
+}
+
+.embassy-popup .maplibregl-popup-close-button:focus-visible {
+  outline: 2px solid #0f3473;
+  outline-offset: 2px;
+}
+
+/* =========================================
+   Age explorer variables
+   Page width and padding come from
+   .visualization-page, not this selector.
+   ========================================= */
+
+.age-explorer {
+  --age-accent: #c2410c;
+  --age-muted: #64748b;
+}
+
+:root.dark .age-explorer {
+  --age-accent: #fb923c;
+  --age-muted: #94a3b8;
+}
+
+/* =========================================
+   Age input and slider
+   ========================================= */
+
+.age-explorer__controls {
+  max-width: 520px;
+  margin: 0 0 48px;
+}
+
+.age-explorer__controls>label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.age-explorer__input-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.age-explorer__input-row input {
+  box-sizing: border-box;
+  width: 110px;
+  padding: 10px 12px;
+  border: 1px solid var(--age-muted);
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 2rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.age-explorer__input-row input:focus-visible {
+  outline: 2px solid var(--age-accent);
+  outline-offset: 3px;
+}
+
+.age-explorer__slider {
+  display: block;
+  width: 100%;
+  margin: 24px 0 12px;
+  accent-color: var(--age-accent);
+  cursor: pointer;
+}
+
+.age-explorer__slider:focus-visible {
+  outline: 2px solid var(--age-accent);
+  outline-offset: 5px;
+}
+
+.age-explorer__range-labels,
+.age-explorer__axis {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  opacity: 0.75;
+}
+
+/* =========================================
+   Age chart
+   ========================================= */
+
+.age-explorer__chart-heading h2,
+.age-explorer__summary h2 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.age-explorer__chart-heading p {
+  margin: 0 0 20px;
+  line-height: 1.6;
+  opacity: 0.75;
+}
+
+.age-explorer__chart-scroll {
+  overflow-x: auto;
+  padding: 8px 4px;
+}
+
+.age-explorer__chart {
+  display: grid;
+  grid-template-columns: repeat(85, minmax(4px, 1fr));
+  grid-template-rows: 1fr;
+  align-items: end;
+  gap: 2px;
+  height: 260px;
+  min-width: 510px;
+  border-bottom: 1px solid var(--age-muted);
+}
+
+.age-explorer__bar {
+  display: block;
+  width: 100%;
+  min-height: 2px;
+  padding: 0;
+  border: 0;
+  border-radius: 3px 3px 0 0;
+  background: var(--age-muted);
+  cursor: pointer;
+  transition: background-color 150ms ease;
+}
+
+.age-explorer__bar:hover,
+.age-explorer__bar--selected {
+  background: var(--age-accent);
+}
+
+.age-explorer__bar:focus-visible {
+  outline: 2px solid var(--age-accent);
+  outline-offset: 3px;
+}
+
+.age-explorer__axis {
+  min-width: 510px;
+  margin-top: 10px;
+}
+
+/* =========================================
+   Age summary cards
+   ========================================= */
+
+.age-explorer__summary {
+  margin-top: 32px;
+}
+
+.age-explorer__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.age-explorer__card {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid var(--age-muted);
+  border-radius: 12px;
+}
+
+.age-explorer__card>p:first-child {
+  margin: 0 0 12px;
+  line-height: 1.5;
+}
+
+.age-explorer__value {
+  color: var(--age-accent);
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+
+/* =========================================
+   Notes and source information
+   ========================================= */
+
+.age-explorer__note {
+  margin: 10px 0 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  opacity: 0.75;
+}
+
+.age-explorer__footer {
+  margin-top: 32px;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  opacity: 0.75;
+}
+
+.age-explorer__footer p {
+  margin: 0 0 8px;
+}
+
+.age-explorer__footer a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* =========================================
+   Mobile
+   ========================================= */
+
+@media (max-width: 640px) {
+  .visualization-page {
+    width: calc(100% - 32px);
+    padding-block: 48px 40px;
+  }
+
+  .visualization-page__header {
+    margin-bottom: 32px;
+  }
+
+  .age-explorer__controls {
+    margin-bottom: 36px;
+  }
+
+  .age-explorer__cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================
+   Reduced motion
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .age-explorer__bar {
+    transition: none;
+  }
 }

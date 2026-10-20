@@ -1,0 +1,533 @@
+{
+  "metadata": {
+    "title": "Population of Germany by age",
+    "source": "Statistisches Bundesamt (Destatis)",
+    "tableCode": "12411-0005",
+    "referenceDate": "2025-12-31",
+    "geography": "Germany",
+    "unit": "persons",
+    "totalPopulation": 83467117,
+    "sourceStatusFlag": "e",
+    "sourceStatusNote": "Source contains flag e on every value; confirm its meaning in the GENESIS legend before publication.",
+    "oldestAgeGroup": "85+",
+    "sourceUrl": "https://genesis.destatis.de/datenbank/online/statistic/12411/table/12411-0005"
+  },
+  "ages": [
+    {
+      "age": 0,
+      "label": "0",
+      "population": 649611,
+      "openEnded": false
+    },
+    {
+      "age": 1,
+      "label": "1",
+      "population": 682434,
+      "openEnded": false
+    },
+    {
+      "age": 2,
+      "label": "2",
+      "population": 702551,
+      "openEnded": false
+    },
+    {
+      "age": 3,
+      "label": "3",
+      "population": 744911,
+      "openEnded": false
+    },
+    {
+      "age": 4,
+      "label": "4",
+      "population": 797854,
+      "openEnded": false
+    },
+    {
+      "age": 5,
+      "label": "5",
+      "population": 783748,
+      "openEnded": false
+    },
+    {
+      "age": 6,
+      "label": "6",
+      "population": 791795,
+      "openEnded": false
+    },
+    {
+      "age": 7,
+      "label": "7",
+      "population": 807105,
+      "openEnded": false
+    },
+    {
+      "age": 8,
+      "label": "8",
+      "population": 818225,
+      "openEnded": false
+    },
+    {
+      "age": 9,
+      "label": "9",
+      "population": 826724,
+      "openEnded": false
+    },
+    {
+      "age": 10,
+      "label": "10",
+      "population": 804655,
+      "openEnded": false
+    },
+    {
+      "age": 11,
+      "label": "11",
+      "population": 800062,
+      "openEnded": false
+    },
+    {
+      "age": 12,
+      "label": "12",
+      "population": 773314,
+      "openEnded": false
+    },
+    {
+      "age": 13,
+      "label": "13",
+      "population": 774393,
+      "openEnded": false
+    },
+    {
+      "age": 14,
+      "label": "14",
+      "population": 762549,
+      "openEnded": false
+    },
+    {
+      "age": 15,
+      "label": "15",
+      "population": 782334,
+      "openEnded": false
+    },
+    {
+      "age": 16,
+      "label": "16",
+      "population": 774465,
+      "openEnded": false
+    },
+    {
+      "age": 17,
+      "label": "17",
+      "population": 799234,
+      "openEnded": false
+    },
+    {
+      "age": 18,
+      "label": "18",
+      "population": 808653,
+      "openEnded": false
+    },
+    {
+      "age": 19,
+      "label": "19",
+      "population": 813437,
+      "openEnded": false
+    },
+    {
+      "age": 20,
+      "label": "20",
+      "population": 844523,
+      "openEnded": false
+    },
+    {
+      "age": 21,
+      "label": "21",
+      "population": 864551,
+      "openEnded": false
+    },
+    {
+      "age": 22,
+      "label": "22",
+      "population": 858757,
+      "openEnded": false
+    },
+    {
+      "age": 23,
+      "label": "23",
+      "population": 879012,
+      "openEnded": false
+    },
+    {
+      "age": 24,
+      "label": "24",
+      "population": 911151,
+      "openEnded": false
+    },
+    {
+      "age": 25,
+      "label": "25",
+      "population": 968856,
+      "openEnded": false
+    },
+    {
+      "age": 26,
+      "label": "26",
+      "population": 982339,
+      "openEnded": false
+    },
+    {
+      "age": 27,
+      "label": "27",
+      "population": 1005351,
+      "openEnded": false
+    },
+    {
+      "age": 28,
+      "label": "28",
+      "population": 1028988,
+      "openEnded": false
+    },
+    {
+      "age": 29,
+      "label": "29",
+      "population": 1007685,
+      "openEnded": false
+    },
+    {
+      "age": 30,
+      "label": "30",
+      "population": 986142,
+      "openEnded": false
+    },
+    {
+      "age": 31,
+      "label": "31",
+      "population": 992504,
+      "openEnded": false
+    },
+    {
+      "age": 32,
+      "label": "32",
+      "population": 1018031,
+      "openEnded": false
+    },
+    {
+      "age": 33,
+      "label": "33",
+      "population": 1035855,
+      "openEnded": false
+    },
+    {
+      "age": 34,
+      "label": "34",
+      "population": 1062533,
+      "openEnded": false
+    },
+    {
+      "age": 35,
+      "label": "35",
+      "population": 1153456,
+      "openEnded": false
+    },
+    {
+      "age": 36,
+      "label": "36",
+      "population": 1140562,
+      "openEnded": false
+    },
+    {
+      "age": 37,
+      "label": "37",
+      "population": 1165979,
+      "openEnded": false
+    },
+    {
+      "age": 38,
+      "label": "38",
+      "population": 1143679,
+      "openEnded": false
+    },
+    {
+      "age": 39,
+      "label": "39",
+      "population": 1125344,
+      "openEnded": false
+    },
+    {
+      "age": 40,
+      "label": "40",
+      "population": 1092064,
+      "openEnded": false
+    },
+    {
+      "age": 41,
+      "label": "41",
+      "population": 1083310,
+      "openEnded": false
+    },
+    {
+      "age": 42,
+      "label": "42",
+      "population": 1083088,
+      "openEnded": false
+    },
+    {
+      "age": 43,
+      "label": "43",
+      "population": 1098875,
+      "openEnded": false
+    },
+    {
+      "age": 44,
+      "label": "44",
+      "population": 1085683,
+      "openEnded": false
+    },
+    {
+      "age": 45,
+      "label": "45",
+      "population": 1086087,
+      "openEnded": false
+    },
+    {
+      "age": 46,
+      "label": "46",
+      "population": 1030966,
+      "openEnded": false
+    },
+    {
+      "age": 47,
+      "label": "47",
+      "population": 1011791,
+      "openEnded": false
+    },
+    {
+      "age": 48,
+      "label": "48",
+      "population": 996708,
+      "openEnded": false
+    },
+    {
+      "age": 49,
+      "label": "49",
+      "population": 973879,
+      "openEnded": false
+    },
+    {
+      "age": 50,
+      "label": "50",
+      "population": 944238,
+      "openEnded": false
+    },
+    {
+      "age": 51,
+      "label": "51",
+      "population": 952873,
+      "openEnded": false
+    },
+    {
+      "age": 52,
+      "label": "52",
+      "population": 953434,
+      "openEnded": false
+    },
+    {
+      "age": 53,
+      "label": "53",
+      "population": 1030937,
+      "openEnded": false
+    },
+    {
+      "age": 54,
+      "label": "54",
+      "population": 1132865,
+      "openEnded": false
+    },
+    {
+      "age": 55,
+      "label": "55",
+      "population": 1168148,
+      "openEnded": false
+    },
+    {
+      "age": 56,
+      "label": "56",
+      "population": 1244951,
+      "openEnded": false
+    },
+    {
+      "age": 57,
+      "label": "57",
+      "population": 1293996,
+      "openEnded": false
+    },
+    {
+      "age": 58,
+      "label": "58",
+      "population": 1316493,
+      "openEnded": false
+    },
+    {
+      "age": 59,
+      "label": "59",
+      "population": 1342579,
+      "openEnded": false
+    },
+    {
+      "age": 60,
+      "label": "60",
+      "population": 1334771,
+      "openEnded": false
+    },
+    {
+      "age": 61,
+      "label": "61",
+      "population": 1350237,
+      "openEnded": false
+    },
+    {
+      "age": 62,
+      "label": "62",
+      "population": 1328080,
+      "openEnded": false
+    },
+    {
+      "age": 63,
+      "label": "63",
+      "population": 1282006,
+      "openEnded": false
+    },
+    {
+      "age": 64,
+      "label": "64",
+      "population": 1256323,
+      "openEnded": false
+    },
+    {
+      "age": 65,
+      "label": "65",
+      "population": 1199844,
+      "openEnded": false
+    },
+    {
+      "age": 66,
+      "label": "66",
+      "population": 1153724,
+      "openEnded": false
+    },
+    {
+      "age": 67,
+      "label": "67",
+      "population": 1076505,
+      "openEnded": false
+    },
+    {
+      "age": 68,
+      "label": "68",
+      "population": 1043752,
+      "openEnded": false
+    },
+    {
+      "age": 69,
+      "label": "69",
+      "population": 1008120,
+      "openEnded": false
+    },
+    {
+      "age": 70,
+      "label": "70",
+      "population": 963043,
+      "openEnded": false
+    },
+    {
+      "age": 71,
+      "label": "71",
+      "population": 931514,
+      "openEnded": false
+    },
+    {
+      "age": 72,
+      "label": "72",
+      "population": 886215,
+      "openEnded": false
+    },
+    {
+      "age": 73,
+      "label": "73",
+      "population": 870896,
+      "openEnded": false
+    },
+    {
+      "age": 74,
+      "label": "74",
+      "population": 839008,
+      "openEnded": false
+    },
+    {
+      "age": 75,
+      "label": "75",
+      "population": 821222,
+      "openEnded": false
+    },
+    {
+      "age": 76,
+      "label": "76",
+      "population": 774930,
+      "openEnded": false
+    },
+    {
+      "age": 77,
+      "label": "77",
+      "population": 688795,
+      "openEnded": false
+    },
+    {
+      "age": 78,
+      "label": "78",
+      "population": 629298,
+      "openEnded": false
+    },
+    {
+      "age": 79,
+      "label": "79",
+      "population": 529104,
+      "openEnded": false
+    },
+    {
+      "age": 80,
+      "label": "80",
+      "population": 448421,
+      "openEnded": false
+    },
+    {
+      "age": 81,
+      "label": "81",
+      "population": 578119,
+      "openEnded": false
+    },
+    {
+      "age": 82,
+      "label": "82",
+      "population": 562613,
+      "openEnded": false
+    },
+    {
+      "age": 83,
+      "label": "83",
+      "population": 520745,
+      "openEnded": false
+    },
+    {
+      "age": 84,
+      "label": "84",
+      "population": 599816,
+      "openEnded": false
+    },
+    {
+      "age": 85,
+      "label": "85+",
+      "population": 3193699,
+      "openEnded": true
+    }
+  ]
+}

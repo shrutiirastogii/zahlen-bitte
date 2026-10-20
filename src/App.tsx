@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router";
 import Home from "./pages/Home";
 import Embassies from "./pages/Embassies";
+import Ages from "./pages/Ages";
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
 
@@ -40,6 +41,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/embassies" element={<Embassies />} />
+        <Route path="/ages" element={<Ages />} />
         <Route
           path="*"
           element={

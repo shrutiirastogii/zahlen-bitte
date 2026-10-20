@@ -4,5 +4,11 @@
     "question": "Where does the world have an address in Berlin?",
     "type": "Map",
     "href": "/embassies"
+  },
+  {
+    "id": "ages",
+    "question": "How old are you?",
+    "type": "View",
+    "href": "/ages"
   }
 ]
