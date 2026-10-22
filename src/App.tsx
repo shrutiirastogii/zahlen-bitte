@@ -4,6 +4,7 @@ import Embassies from "./pages/Embassies";
 import Ages from "./pages/Ages";
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
+import Deaths from "./pages/Deaths";
 
 function getInitialTheme(): boolean {
   try {
@@ -42,6 +43,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/embassies" element={<Embassies />} />
         <Route path="/ages" element={<Ages />} />
+        <Route path="/deaths" element={<Deaths />} />
         <Route
           path="*"
           element={

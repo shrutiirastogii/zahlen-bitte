@@ -10,5 +10,11 @@
     "question": "How old are you?",
     "type": "View",
     "href": "/ages"
+  },
+  {
+    "id": "deaths",
+    "question": "What people in Germany die of, in every age?",
+    "type": "View",
+    "href": "/deaths"
   }
 ]

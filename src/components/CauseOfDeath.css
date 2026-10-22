@@ -1,0 +1,24 @@
+.deaths-switch { display: inline-flex; flex-wrap: wrap; gap: 6px; padding: 5px; border: 1px solid currentColor; border-radius: 12px; }
+.deaths-switch button { padding: 10px 20px; border-radius: 8px; cursor: pointer; background: transparent; color: inherit; }
+.deaths-switch button[aria-pressed="true"] { background: var(--foreground); color: var(--background); }
+.deaths-intro { margin: 24px 0 10px; font-size: 1.2rem; }
+.deaths-note, .deaths-footer { font-size: .85rem; line-height: 1.6; opacity: .8; }
+.deaths-chart-scroll { overflow-x: auto; margin-block: 24px 12px; }
+.deaths-chart { width: 100%; min-width: 920px; height: auto; display: block; }
+.deaths-legend { display: flex; flex-wrap: wrap; gap: 10px; margin-block: 24px; }
+.deaths-legend button { display: flex; align-items: center; gap: 8px; padding: 8px 12px; border: 1px solid currentColor; border-radius: 8px; color: inherit; background: transparent; cursor: pointer; font-size: .85rem; }
+.deaths-legend button[aria-pressed="true"] { outline: 2px solid currentColor; outline-offset: 2px; }
+.deaths-legend span { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
+.deaths-page button:focus-visible, .deaths-page select:focus-visible { outline: 3px solid #fb923c; outline-offset: 3px; }
+.deaths-details { margin-block: 32px; max-width: 760px; }
+.deaths-details label { display: block; margin-bottom: 8px; }
+.deaths-details select { padding: 8px 12px; border: 1px solid currentColor; border-radius: 6px; background: var(--background); color: var(--foreground); }
+.deaths-details h2 { margin: 24px 0 8px; font-size: 1.4rem; font-weight: 600; }
+.deaths-details table { margin-top: 16px; width: 100%; border-collapse: collapse; font-size: .9rem; }
+.deaths-details caption { text-align: left; font-size: .8rem; padding-bottom: 12px; opacity: .75; }
+.deaths-details th, .deaths-details td { padding: 10px 8px; border-bottom: 1px solid #94a3b8; text-align: left; }
+.deaths-details tbody th { font-weight: 400; }
+.deaths-details td, .deaths-details thead th:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+.deaths-footer { margin-top: 32px; }
+.deaths-footer p { margin-bottom: 10px; }
+.deaths-footer a { text-decoration: underline; }
