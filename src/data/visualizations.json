@@ -7,13 +7,13 @@
   },
   {
     "id": "ages",
-    "question": "How old are you?",
+    "question": "Where do you fit?",
     "type": "View",
     "href": "/ages"
   },
   {
     "id": "deaths",
-    "question": "What people in Germany die of, in every age?",
+    "question": "How Germany dies, age by age?",
     "type": "View",
     "href": "/deaths"
   }
